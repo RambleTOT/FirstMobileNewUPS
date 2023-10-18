@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FirstNewUPS</string>
+    <string name="text_input_hint">Введите название секции или кружка</string>
 </resources>
