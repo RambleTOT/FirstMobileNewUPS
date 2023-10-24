@@ -41,12 +41,12 @@ fun SearchInput(
         value = text,
         onValueChange = onValueChange,
         shape = RoundedCornerShape(20.dp),
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier.fillMaxWidth().height(60.dp),
         textStyle = TextStyle(
             fontSize = 14.sp,
             fontFamily = FontFamily(Font(R.font.mont_regular)),
             fontWeight = FontWeight(600),
-            color = ColorText,
+            color = ColorText
         ),
         leadingIcon = {
             Icon(
@@ -62,7 +62,6 @@ fun SearchInput(
         placeholder = {
             Text(
                 stringResource(id = R.string.text_input_hint),
-                modifier = Modifier.padding( top = 7.dp, bottom = 7.dp),
                 style = TextStyle(
                     color = ColorText,
                     fontFamily = FontFamily(Font(R.font.mont_regular)),
