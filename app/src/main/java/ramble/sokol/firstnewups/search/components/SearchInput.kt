@@ -51,6 +51,7 @@ fun SearchInput(
         leadingIcon = {
             Icon(
                 modifier = Modifier
+                    .padding(start = 20.dp)
                     .width(24.dp)
                     .height(24.dp),
                 painter = painterResource(id = R.drawable.icon_search),
@@ -61,6 +62,7 @@ fun SearchInput(
         placeholder = {
             Text(
                 stringResource(id = R.string.text_input_hint),
+                modifier = Modifier.padding( top = 7.dp, bottom = 7.dp),
                 style = TextStyle(
                     color = ColorText,
                     fontFamily = FontFamily(Font(R.font.mont_regular)),
